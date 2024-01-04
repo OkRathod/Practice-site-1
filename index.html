@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sr1:hover{
+            border-radius:10px;
+            height:25px;
+            width:50%;
+            border:0.1px solid black;
+            background-color:whitesmoke;
+            color:black;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+        }
+        .sr1{
+            width:50%;
+            height:20px;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius:10px;
+            border:0.1px solid lightgray;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <form action="https://www.google.com/search">
+            <div style="background-color: Red;">
+                <input type="radio" id="red" name="q" value="red">
+                <lable for="red">Red</lable>
+            </div>
+            <br>
+            <div style="background-color: yellow;">
+                <input type="radio" id="yellow" name="q" value="yellow">
+                <lable for="yellow">Yellow</lable>   
+            </div>
+            <br>
+            <div style="background-color: pink;">
+                <input type="radio" id="pink" name="q" value="pink">
+                <lable for="pink">Pink</lable>
+            </div>
+            <br>
+            <input type="submit"  style="margin:10px;margin-left:0px;">
+            <br>
+        </form>
+    </div>
+    <hr>
+    <form action="https://www.google.com/search">
+        <div style="margin:10px;">
+            <lable for="colleges">select the college you want to search for:</lable>
+            <input formaction="https://www.google.com/search" list="colleges" name="q" id="college">
+            <datalist id="colleges">
+                <option value="VIT">
+                <option value="IIT">
+                <option value="BITS">
+            <br>
+        </div>
+    </form>
+    <hr>
+    <form action="https://www.google.com/search">
+        <input class="sr1" type="text" name="q" placeholder="search">
+        <input type="submit" style="margin:10px;margin-left:0px;display: flex; margin-left: auto; margin-right: auto;">
+    </form>
+    <div style="margin:10px;">
+    </div>
+</body>
+</html>
